@@ -6,7 +6,8 @@
   "license": "WTFPL",
   "scripts": {
     "gemini": "NODE_ENV=regression gemini test --reporter html --reporter flat",
-    "gemini-update": "NODE_ENV=regression gemini update"
+    "gemini-update": "NODE_ENV=regression gemini update",
+    "phantom": "phantomjs --webdriver=4444 --webdriver-loglevel=INFO"
   },
   "dependencies": {},
   "devDependencies": {
