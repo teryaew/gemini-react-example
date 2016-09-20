@@ -1,0 +1,20 @@
+gridUrl: http://localhost:4444
+rootUrl: http://localhost:5432
+windowSize: 1024x768
+
+httpTimeout: 60000
+sessionsPerBrowser: 3
+suitesPerSession: 100
+retry: 100
+
+browsers:
+  PhantomJS:
+      desiredCapabilities:
+        browserName: phantomjs
+
+system:
+  debug: false
+  plugins:
+    babel: {}
+    react:
+      webpackConfig: ./webpack.config.js

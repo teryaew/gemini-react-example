@@ -1,0 +1,10 @@
+.build/
+.idea/
+
+node_modules/
+npm-debug.log
+
+coverage/
+.gemini-react-tmp/
+gemini-coverage/
+gemini-report/
