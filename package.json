@@ -5,6 +5,7 @@
   "repository": "https://github.com/teryaew/gemini-react-example",
   "license": "WTFPL",
   "scripts": {
+    "build": "webpack",
     "gemini": "npm-run-all --silent -p -r phantom gemini:test",
     "gemini-update": "npm-run-all --silent -p -r phantom gemini:gather",
     "gemini:test": "NODE_ENV=regression gemini test --reporter html --reporter flat",
