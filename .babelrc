@@ -5,7 +5,7 @@
     "regression": {
       "plugins": [
         "babel-plugin-react-require",
-        ["babel-plugin-transform-require-ignore", { extensions: [".css"] }]
+        "transform-decorators-legacy"
       ]
     }
   }
