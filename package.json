@@ -5,9 +5,11 @@
   "repository": "https://github.com/teryaew/gemini-react-example",
   "license": "WTFPL",
   "scripts": {
-    "gemini": "NODE_ENV=regression gemini test --reporter html --reporter flat",
-    "gemini-update": "NODE_ENV=regression gemini update",
-    "phantom": "phantomjs --webdriver=4444 --webdriver-loglevel=INFO"
+    "gemini": "npm-run-all --silent -p -r phantom gemini:test",
+    "gemini-update": "npm-run-all --silent -p -r phantom gemini:gather",
+    "gemini:test": "NODE_ENV=regression gemini test --reporter html --reporter flat",
+    "gemini:gather": "NODE_ENV=regression gemini update",
+    "phantom": "phantomjs --webdriver=4444 --webdriver-loglevel=ERROR"
   },
   "dependencies": {},
   "devDependencies": {
@@ -28,6 +30,7 @@
     "gemini-babel": "https://github.com/teryaew/gemini-babel.git",
     "gemini-react": "https://github.com/teryaew/gemini-react.git",
     "html-webpack-plugin": "^2.22.0",
+    "npm-run-all": "^3.1.0",
     "phantomjs-prebuilt": "^2.1.12",
     "postcss-loader": "^0.13.0",
     "postcss-nested": "^1.0.0",
