@@ -16,5 +16,6 @@ system:
   debug: false
   plugins:
     babel: true
+    optipng: true
     react:
       webpackConfig: ./webpack.config.js

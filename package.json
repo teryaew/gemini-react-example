@@ -28,6 +28,7 @@
     "file-loader": "^0.8.5",
     "gemini": "^4.10.0",
     "gemini-babel": "https://github.com/teryaew/gemini-babel.git",
+    "gemini-optipng": "^1.0.0",
     "gemini-react": "https://github.com/teryaew/gemini-react.git",
     "html-webpack-plugin": "^2.22.0",
     "npm-run-all": "^3.1.0",
